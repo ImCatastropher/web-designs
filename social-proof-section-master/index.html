@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor Challenge| Social proof section</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <style>
+
+
+      body{
+        font-family: 'Spartan', sans-serif;
+        font-size: 13px;
+        color: hsl(300, 43%, 22%);
+        position: absolute;
+      }
+      h1{
+        font-size: 3rem;
+        display: inline;
+      }
+
+      h4{
+        color: hsl(333, 80%, 67%);
+        line-height: 0;
+        margin-bottom: 15%;
+      }
+
+      p{
+        line-height: 2;
+        clear: left;
+      }
+
+      span{
+        color: gold;
+        margin-right: 20px;
+        padding-left: 10px;
+      }
+
+      svg{
+        position: absolute;
+      }
+
+      img{
+        border-radius: 50%;
+        float: left;
+        padding: 10px;
+        margin-right: 10%;
+        width: 20%;
+      }
+
+        .container{
+          margin-bottom: 50px;
+          position: relative;
+          margin: 10%;
+        }
+
+        .row{
+          display: flex;
+          margin-bottom: 5%;
+        }
+
+        .col-50{
+          width: 50%;
+          margin-right: 10%;
+        }
+
+        .attribution {
+          font-size: 12px;
+          text-align: center;
+          margin-top: 10%;
+        }
+        .attribution a {
+          color: hsl(228, 45%, 44%);
+        }
+
+        .rates{
+          padding: 1%;
+          margin-bottom: 5%;
+          background-color: hsl(300, 24%, 96%);
+          border-radius: 8px;
+          position: relative;
+        }
+
+        .star2{
+          left:40px;
+        }
+
+        .star3{
+          left:80px;
+        }
+
+        .card{
+          background-color:hsl(300, 43%, 22%);
+          color: white;
+          margin-right: 30px;
+          padding: 30px;
+          border-radius: 8px;
+          display: block;
+          position: relative;
+        }
+
+        .card2{
+          top: 20px;
+        }
+
+        .card3{
+          top: 40px;
+        }
+
+      @media (max-width: 800px){
+
+        body{
+          font-size: 10px;
+          text-align: center;
+        }
+        .container{
+          position: static;
+          display: block;
+        }
+
+        .row{
+          display: block;
+        }
+
+        .col-50{
+          width: 100%;
+        }
+
+        .rates{
+          position: static;
+
+        }
+
+        .card{
+          position: static;
+          margin: 20px;
+        }
+
+      }
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <svg width="584" height="500" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="100%" y1="69.212%" x2="9.399%" y2="32.183%" id="a"><stop stop-color="#8A4389" stop-opacity="0" offset="0%"/><stop stop-color="#512051" offset="100%"/><stop stop-color="#512051" offset="100%"/><stop stop-color="#512051" offset="100%"/></linearGradient></defs><path d="M0 362c40.022-82.8 115.736-135.154 227.141-157.064 167.108-32.864 103.85-66.012 185.949-131.796C467.823 29.284 524.793 4.904 584 0v362H0z" transform="rotate(180 292 181)" fill="url(#a)" fill-rule="evenodd" opacity=".05"/></svg>
+    <svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" class="svg-bottom"><defs><linearGradient x1="100%" y1="69.237%" x2="9.399%" y2="32.159%" id="a"><stop stop-color="#8A4389" stop-opacity="0" offset="0%"/><stop stop-color="#512051" offset="100%"/><stop stop-color="#512051" offset="100%"/><stop stop-color="#512051" offset="100%"/></linearGradient></defs><path d="M355 800c74.356-153.934 215.022-251.268 422-292 310.466-61.099 192.94-122.724 345.47-245.025C1224.157 181.442 1330 136.116 1440 127v673H355z" transform="translate(-355 -127)" fill="url(#a)" fill-rule="evenodd" opacity=".05"/></svg>
+    <div class="container">
+      <div class="row">
+        <div class="col-50">
+          <h1><strong>10,000+ of our users love our products.</strong></h1>
+          <p>We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.</p>
+        </div>
+        <div class="col-50">
+          <div class="rates">
+            <p><span>★ ★ ★ ★ ★</span>    Rated 5 Stars in Reviews</p>
+          </div>
+          <div class="rates star2">
+            <p><span>★ ★ ★ ★ ★</span>    Rated 5 Stars in Report Guru</p>
+          </div>
+          <div class="rates star3">
+            <p><span>★ ★ ★ ★ ★</span>    Rated 5 Stars in BestTech</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card">
+          <img src="images/image-colton.jpg" alt="colton-profile-picture">
+            <h3>Colton Smith</h3>
+            <h4>Verified Buyer</h4>
+          <p>"We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"</p>
+        </div>
+        <div class="card card2">
+          <img src="images/image-irene.jpg" alt="irene-profile-picture">
+            <h3>Irene Roberts</h3>
+            <h4>Verified Buyer</h4>
+          <p>"Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."</p>
+        </div>
+        <div class="card card3">
+          <img src="images/image-anne.jpg" alt="anne-profile-picture">
+            <h3>Anne Wallace</h3>
+            <h4>Verified Buyer</h4>
+          <p>"Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/Niteesh07">Niteesh Reddy Thota</a>.
+    </div>
+  </body>
+</html>

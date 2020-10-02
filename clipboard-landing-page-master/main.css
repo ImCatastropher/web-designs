@@ -1,0 +1,156 @@
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #9fabb2; }
+
+h1, h2, h3 {
+  color: #4c545d;
+  font-size: 44px;
+  margin-bottom: 0; }
+
+h2 {
+  font-size: 33px; }
+
+h3 {
+  font-size: 18px; }
+
+.container-1 {
+  padding: 100px 20px 10px;
+  text-align: center;
+  background-image: url("images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  font-size: 20px; }
+  .container-1 p {
+    padding: 0 360px;
+    margin-top: 15px;
+    line-height: 1.5; }
+
+.container-2 {
+  padding: 100px 20px 20px;
+  text-align: center; }
+  .container-2 p {
+    padding: 0 360px;
+    margin-top: 15px;
+    line-height: 1.5; }
+
+.img-text-container {
+  padding: 200px 20px 20px;
+  text-align: left; }
+  .img-text-container p {
+    padding: 0;
+    margin-top: 15px;
+    line-height: 1.5; }
+
+.absolute-img {
+  margin-left: -10%;
+  margin-right: 10%; }
+
+.container-3 {
+  padding: 10px 20px 10px;
+  text-align: left;
+  width: 400px; }
+  .container-3 p {
+    padding: 0;
+    margin-top: 15px;
+    line-height: 1.5; }
+
+.vertical-blocks {
+  display: inline-block;
+  vertical-align: top; }
+
+.card-container, .company-logo-container {
+  padding: 40px 20px 30px;
+  text-align: center;
+  display: inline-block; }
+  .card-container p, .company-logo-container p {
+    padding: 0;
+    margin-top: 15px;
+    line-height: 1.5; }
+
+.container-4 {
+  padding: 50px 10px 50px;
+  text-align: center;
+  width: 400px;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px; }
+  .container-4 p {
+    padding: 0;
+    margin-top: 15px;
+    line-height: 1.5; }
+
+.company-logo-container {
+  margin: 3% 0; }
+  .company-logo-container img {
+    margin: 0 65px; }
+
+.container-6 {
+  padding: 100px 20px 10px;
+  text-align: center; }
+  .container-6 p {
+    padding: 0 360px;
+    margin-top: 15px;
+    line-height: 1.5; }
+
+.footer-nav {
+  padding: 40px 20px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f4f5f6; }
+  .footer-nav p {
+    padding: 0;
+    margin-top: 15px;
+    line-height: 1.5; }
+
+.links {
+  display: inline-block; }
+
+.individual-links {
+  display: inline-block;
+  margin-right: 50px; }
+  .individual-links a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #9fabb2; }
+    .individual-links a:hover {
+      color: #26baa4; }
+
+.icon {
+  margin-right: 20px; }
+  .icon:hover {
+    color: #26baa4; }
+
+.btn-1 {
+  background-color: #26baa4;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: 2px solid #26baa4;
+  cursor: pointer;
+  text-align: center;
+  margin: 40px 10px;
+  box-shadow: 0 0 5px #26baa4; }
+  .btn-1:hover {
+    background-color: #2acfb7; }
+
+.btn-2 {
+  background-color: #6173ff;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: 2px solid #6173ff;
+  cursor: pointer;
+  text-align: center;
+  margin: 40px 10px;
+  box-shadow: 0 0 5px #6173ff; }
+  .btn-2:hover {
+    background-color: #7a8aff; }
+
+/*# sourceMappingURL=main.css.map */

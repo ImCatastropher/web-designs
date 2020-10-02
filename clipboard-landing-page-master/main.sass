@@ -1,0 +1,133 @@
+//VARIABLES
+$font: 'Bai Jamjuree', sans-serif
+$font-size: 18px
+$big-color: hsl(210, 10%, 33%)
+$para-color: hsl(201, 11%, 66%)
+$button-1-color: hsl(171, 66%, 44%)
+$button-2-color: hsl(233, 100%, 69%)
+$font-size-h1: 44px
+$font-size-h2: 33px
+$font-size-md: 20px
+$font-size-sm: 18px
+
+
+//MIXINS
+=btn($bg, $color, $padding, $rad)
+    background-color:   $bg
+    color:              $color
+    padding:            $padding
+    border-radius:      $rad
+    border: 2px solid $bg
+    cursor: pointer
+    text-align: center
+    margin: 40px 10px
+    box-shadow: 0 0 5px $bg
+    &:hover
+        background-color: lighten($bg, 5%)
+
+=container($padding, $center, $p-padding)
+    padding: $padding
+    text-align: $center
+    p
+        padding: $p-padding
+        margin-top: 15px
+        line-height: 1.5   
+
+=hover()
+    &:hover
+            color: $button-1-color
+
+//STYLES
+
+body
+    font-family: $font
+    margin: 0
+    padding: 0
+    font-size: $font-size-sm
+    color: $para-color
+
+h1
+    color: hsl(210, 10%, 33%)
+    font-size: $font-size-h1
+    margin-bottom: 0
+
+
+h2
+    @extend h1
+    font-size: $font-size-h2
+
+h3
+    @extend h1
+    font-size: $font-size-sm
+
+.container-1 
+    +container(100px 20px 10px, center, 0 360px)
+    background-image: url('images/bg-header-desktop.png')
+    background-repeat: no-repeat
+    font-size: $font-size-md
+
+.container-2
+    +container(100px 20px 20px, center, 0 360px)
+
+.img-text-container
+    +container(200px 20px 20px, left, 0)
+
+.absolute-img
+    margin-left: -10%
+    margin-right: 10%
+
+.container-3
+    +container(10px 20px 10px, left,0)
+    width: 400px
+
+.vertical-blocks
+    display: inline-block
+    vertical-align: top
+
+.card-container 
+    +container(40px 20px 30px, center,0)
+    display: inline-block
+.container-4
+    +container(50px 10px 50px, center, 0)
+    width: 400px
+    font-size: $font-size-sm
+    display: inline-block
+    vertical-align: top
+    margin-left: 30px
+
+.company-logo-container
+    @extend .card-container 
+    margin: 3% 0
+    img
+        margin: 0 65px
+
+.container-6 
+    +container(100px 20px 10px, center, 0 360px)   
+
+.footer-nav 
+    +container(40px 20px 30px, center,0)
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    background-color: lighten($para-color,30%)
+    
+.links
+    display: inline-block 
+.individual-links
+    display: inline-block
+    margin-right: 50px
+    a
+        display: block
+        margin: 10px 0
+        text-decoration: none
+        color: $para-color
+        +hover()
+        
+.icon
+        margin-right: 20px
+        +hover()
+.btn-1
+    +btn($button-1-color, white, 15px 40px, 30px)
+.btn-2
+    +btn($button-2-color, white, 15px 40px, 30px)

@@ -12,3 +12,5 @@ https://imcatastropher.github.io/web-designs-challenges/fylo-data-storage-compon
 https://imcatastropher.github.io/web-designs-challenges/huddle-landing-page-with-curved-sections-master/index.html
 https://imcatastropher.github.io/web-designs-challenges/social-proof-section-master/index.html
 https://imcatastropher.github.io/web-designs-challenges/clipboard-landing-page-master/index.html
+https://imcatastropher.github.io/web-designs-challenges/intro-component-with-signup-form-master/index.html
+

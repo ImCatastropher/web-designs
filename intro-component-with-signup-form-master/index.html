@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-container">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+      but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="right-container">
+      <div class="try-it-free">
+        <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+      </div>
+      <form class="form-container" id="form">
+        <p id="text"></p>
+        <div class="input-container">
+          <input class="input-box" id="first-name" type="text" name="first-name" placeholder="First Name">
+          <i class="fas fa-check-circle icon-r fa-2x"></i>
+          <i class="fas fa-exclamation-circle icon-w fa-2x"></i>
+          <small class="p-tag"><em>First Name Required</em></small>
+        </div>
+        <div class="input-container">
+          <input class="input-box" id="last-name" type="text" name="last-name" value="" placeholder="Last Name">
+          <i class="fas fa-check-circle icon-r fa-2x"></i>
+          <i class="fas fa-exclamation-circle icon-w fa-2x"></i>
+          <small class="p-tag"><em>Last name required</em></small>
+        </div>
+        <div class="input-container">
+          <input class="input-box" id="email" type="text" name="email" value="" placeholder="Email">
+          <!-- ^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$ -->
+          <i class="fas fa-check-circle icon-r fa-2x"></i>
+          <i class="fas fa-exclamation-circle icon-w fa-2x"></i>
+          <small class="p-tag"><em>Email format not satisfied or Email required</em></small>
+
+        </div>
+        <div class="input-container">
+          <input class="input-box" id="password" type="password" name="password" value="" placeholder="Password">
+          <!-- (?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#_*$]).{8,16} -->
+          <i class="fas fa-check-circle icon-r fa-2x"></i>
+          <i class="fas fa-exclamation-circle icon-w fa-2x"></i>
+          <small class="p-tag"><em>Password format not satisfied or Password Required</em></small>
+        </div>
+        <button type="submit" class="input-button" name="submit">Claim your free trial</button>
+        <p>By clicking the button, you are agreeing to our <span><strong>Terms and Services</strong></span></p>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

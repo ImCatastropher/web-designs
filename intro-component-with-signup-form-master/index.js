@@ -41,14 +41,6 @@ function checkInputs(){
   else{
     success(password);
   }
-
-  if(success(fname) && success(lname) && success(email) && success(password)){
-    var text = document.getElementById("text");
-    text.innerHTML = "Details Submitted";
-    text.style.color = "hsl(154, 59%, 51%)";
-    text.style.fontSize = "16px";
-    text.style.fontWeight = "bold";
-  }
 }
 
 function error(input){
@@ -70,7 +62,6 @@ function success(input){
   symbolr.style.visibility = "visible";
   const symbolw = success.querySelector(".icon-w");
   symbolw.style.visibility = "hidden";
-  return true;
 }
 
 function isEmail(input){

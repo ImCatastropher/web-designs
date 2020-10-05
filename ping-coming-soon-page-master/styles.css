@@ -1,0 +1,77 @@
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 18px;
+  margin: 5% 10%;
+  padding: 20px 40px;
+  text-align: center; }
+
+.big-heading {
+  font-size: 42px;
+  color: #969696;
+  margin-bottom: 0; }
+  .big-heading strong {
+    color: black; }
+
+.input-type, .input-button {
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid #969696;
+  padding: 0 20px;
+  outline: 0;
+  width: 90%; }
+
+.input-button {
+  background-color: #5c8aff;
+  color: white;
+  border: 0; }
+  .input-button:hover {
+    background-color: #c2d3ff; }
+
+.input-fields {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  margin: 5% 20%; }
+
+.footer-part {
+  color: #969696;
+  margin: 5% 0; }
+
+.icon {
+  margin-right: 40px;
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+  color: #5c8aff; }
+  .icon:hover {
+    background-color: #5c8aff;
+    color: white; }
+
+#illustration {
+  margin: 5% 0;
+  width: 60%; }
+
+.content-input {
+  position: relative; }
+
+.icon-w, .icon-r {
+  position: absolute;
+  bottom: 40%;
+  right: 6%;
+  color: #ff5263;
+  visibility: hidden; }
+
+.icon-r {
+  color: green; }
+
+.p-tag {
+  color: #ff5263;
+  visibility: hidden; }
+
+.error {
+  border-color: #ff5263; }
+
+.success {
+  border-color: green; }
+
+/*# sourceMappingURL=styles.css.map */

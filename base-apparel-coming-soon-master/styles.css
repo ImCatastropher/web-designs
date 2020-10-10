@@ -1,0 +1,84 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: linear-gradient(135deg, white, #fff5f5), linear-gradient(135deg, #f8bfbf, #ee8c8c); }
+
+h1 {
+  font-size: 70px;
+  margin: 0;
+  line-height: 1.25;
+  color: black; }
+
+footer {
+  margin-left: 60%;
+  text-align: center; }
+
+button {
+  width: 100px;
+  height: 55px;
+  border: 0;
+  border-radius: 30px;
+  background: linear-gradient(135deg, white, #ee8c8c);
+  outline: none;
+  cursor: pointer; }
+
+button:active {
+  transform: translateX(1px); }
+
+.left-container {
+  margin: 10% 24%;
+  text-align: left;
+  color: #ce9797;
+  position: relative; }
+  .left-container p {
+    line-height: 1.5; }
+
+.content {
+  margin-top: 30%; }
+
+.top-tag {
+  font-size: 60px;
+  margin-bottom: 0;
+  font-weight: 300; }
+
+.email-entry {
+  margin: 10% 0;
+  position: relative; }
+  .email-entry input {
+    height: 50px;
+    padding-left: 30px;
+    width: 90%;
+    border-radius: 30px;
+    border: 1px solid #cccccc;
+    font-family: "Josefin Sans", sans-serif;
+    color: #ce9797;
+    background: linear-gradient(135deg, white, #fff5f5);
+    outline: none; }
+
+.background {
+  position: absolute;
+  z-index: -1;
+  top: -20%;
+  left: -45%; }
+
+.my-button, .icon {
+  position: absolute;
+  right: -5%;
+  bottom: 30%; }
+
+.icon {
+  right: 20%;
+  bottom: 45%;
+  color: #f96262;
+  visibility: hidden; }
+
+.hidden-para {
+  margin: 0 5%;
+  visibility: hidden;
+  color: #f96262; }
+
+/*# sourceMappingURL=styles.css.map */

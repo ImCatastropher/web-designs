@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src="images/logo-bookmark.svg" alt="logo-bookmark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="img-1"><img src="images/icon-hamburger.svg" alt="icon-hamburger"></span>
+    <span class="img-2"><img src="images/icon-close.svg" alt="icon-close"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link login">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="main-container">
+  <div class="left-container">
+    <h1>A Simple Bookmark Manager</h1>
+    <p class="p-tag">A clean and simple interface to organize your favourite websites. Open a new
+    browser tab and see your sites load instantly. Try it for free.</p>
+    <button class="chrome-button" type="button" name="button">Get it on Chrome</button>
+    <button class="firefox-button" type="button" name="button">Get it on Firefox</button>
+  </div>
+  <div class="right-container">
+    <img src="images/illustration-hero.svg" alt="illustration-hero">
+  </div>
+</div>
+<div class="text-container">
+  <h2>Features</h2>
+  <p>Our aim is to make it quick and easy for you to access your favourite websites.
+  Your bookmarks sync between your devices so you can access them on the go.</p>
+</div>
+
+<div class="tabs-container">
+  <ul class="nav nav-pills">
+  <li class="nav-item item-1">
+    <button class="button-selector" type="button">Simple Bookmarking</button>
+    <hr class="active-hr">
+  </li>
+  <li class="nav-item item-2">
+    <button class="button-selector" type="button">Speedy Searching</button>
+    <hr class="active-hr">
+  </li>
+  <li class="nav-item item-3">
+    <button class="button-selector" type="button">Easy Sharing</button>
+    <hr class="active-hr">
+  </li>
+  </ul>
+  <hr class="horizontal-rule">
+</div>
+
+<div class="content-container">
+  <div id="content-1">
+    <img src="images/illustration-features-tab-1.svg" alt="icon-1">
+    <div class="text-part">
+      <h2>Bookmark in one click</h2>
+      <p class="p-tag">Organize your bookmarks however you like. Our simple drag-and-drop interface
+      gives you complete control over how you manage your favourite sites.</p>
+      <button class="text-button" type="button" name="button">More Info</button>
+    </div>
+  </div>
+    <div id="content-2">
+      <img src="images/illustration-features-tab-2.svg" alt="icon-2">
+      <div class="text-part">
+        <h2>Intelligent search</h2>
+        <p class="p-tag">Our powerful search feature will help you find saved sites in no time at all.
+        No need to trawl through all of your bookmarks.</p>
+        <button class="text-button" type="button" name="button">More Info</button>
+      </div>
+    </div>
+    <div id="content-3">
+      <img src="images/illustration-features-tab-3.svg" alt="icon-3">
+      <div class="text-part">
+        <h2>Share your bookmarks</h2>
+        <p class="p-tag">Easily share your bookmarks and collections with others. Create a shareable
+        link that you can send at the click of a button.</p>
+        <button class="text-button" type="button" name="button">More Info</button>
+      </div>
+    </div>
+</div>
+
+<div class="text-container">
+  <h2>Download the extension</h2>
+  <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
+  got a favourite you’d like us to prioritize.</p>
+</div>
+
+<div class="card-container">
+  <div class="card-1">
+    <p><img class="logo" src="images/logo-chrome.svg" alt="chrome"></p>
+    <h3>Add to Chrome</h3>
+    <p class="p-tag">Minimum version 62</p>
+    <img src="images/bg-dots.svg" alt="dots">
+    <button type="button" name="button">Add & Install Extension</button>
+  </div>
+  <div class="card-2">
+    <p><img class="logo" src="images/logo-firefox.svg" alt="chrome"></p>
+    <h3>Add to Firefox</h3>
+    <p class="p-tag">Minimum version 55</p>
+    <img src="images/bg-dots.svg" alt="dots">
+    <button type="button" name="button">Add & Install Extension</button>
+  </div>
+  <div class="card-3">
+    <p><img class="logo" src="images/logo-opera.svg" alt="chrome"></p>
+    <h3>Add to Opera</h3>
+    <p class="p-tag">Minimum version 46</p>
+    <img src="images/bg-dots.svg" alt="dots">
+    <button type="button" name="button">Add & Install Extension</button>
+  </div>
+</div>
+
+<div class="text-container">
+  <h2>Frequently Asked Questions</h2>
+  <p>Here are some of our FAQs. If you have any other questions you’d like
+  answered please feel free to email us.</p>
+</div>
+
+<div class="questions-part">
+  <hr>
+  <div class="content-part dropdown">
+    <button class="drop-button" id="b-1" type="button" name="button"><h6>What is Bookmark?</h6><span><i class="fas fa-chevron-down icon i-1"></i></span><span><i class="fas fa-chevron-up icon i-2"></i></span></button>
+    <p class="hidden-part">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+  </div>
+  <hr>
+  <div class="content-part dropdown">
+    <button class="drop-button" id="b-2" type="button" name="button"><h6>How can I request a new browser?</h6><span><i class="fas fa-chevron-down icon i-1"></i></span><span><i class="fas fa-chevron-up icon i-2"></i></span></button>
+    <p class="hidden-part"> Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+    Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+    ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+    Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+    </p>
+  </div>
+  <hr>
+  <div class="content-part dropdown">
+    <button class="drop-button" id="b-3" type="button" name="button"><h6>Is there a mobile app?</h6><span><i class="fas fa-chevron-down icon i-1"></i></span><span><i class="fas fa-chevron-up icon i-2"></i></span></button>
+    <p class="hidden-part">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+    urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+    sollicitudin ex et ultricies bibendum.</p>
+  </div>
+  <hr>
+  <div class="content-part dropdown">
+    <button class="drop-button" id="b-4" type="button" name="button"><h6>What about other Chromium browsers?</h6><span><i class="fas fa-chevron-down icon i-1"></i></span><span><i class="fas fa-chevron-up icon i-2"></i></span></button>
+    <p class="hidden-part">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+    vitae neque eget nisl gravida pellentesque non ut velit.
+    </p>
+  </div>
+  <hr>
+</div>
+
+<div class="more-info-button">
+  <button class="text-button" type="button" name="button">More Info</button>
+</div>
+
+<div class="footer-part">
+  <div class="footer-content">
+    <p>35,000+ ALREADY JOINED</p>
+    <h2>Stay up-to-date with what we’re doing</h2>
+  </div>
+    <div class="input-part">
+      <input type="email" name="email" id="email" value="" placeholder="Enter your email address">
+      <button class="login" id="contact" type="submit" name="button">Contact Us</button>
+      <i class="fas fa-exclamation error-icon"></i>
+      <i class="fas fa-check-circle correct-icon"></i>
+      <p class="error">Whoops, make sure it's an email</p>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg change-color" >
+  <img src="images/logo-bookmark0.svg" alt="logo-bookmark">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-5">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <i class="fab fa-facebook-square fa-2x icon"></i>
+    <i class="fab fa-twitter fa-2x icon"></i>
+
+  </div>
+</nav>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Niteesh07">Niteesh Reddy Thota</a>.
+    </p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>

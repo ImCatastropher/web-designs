@@ -1,0 +1,264 @@
+//mixns
+
+=button($width, $height, $bg, $color, $hover-bg, $hover-color, $hover-border-color)
+  border-radius: 6px
+  text-align: center
+  width: $width
+  background-color: $bg
+  color: $color !important
+  height: $height
+  border: 0
+  outline: none
+  transform: translateY(4px)
+  &:hover
+    background-color: $hover-bg
+    color: $hover-color !important
+    border: 2px solid $hover-border-color
+  &:focus
+    outline: none
+
+=container($margin, $align)
+  margin: $margin
+  text-align: $align
+
+//code
+body
+  font-family: 'Rubik', sans-serif
+  font-size: 18px
+h1
+  margin: 5% 0
+  color: black
+h2
+  margin-bottom: 4% !important
+p
+  color: grey
+
+.navbar
+  background-color: white !important
+  margin: 2% 5%
+
+.navbar-nav
+  margin-right: 0
+  margin-left: auto
+  display: grid
+  grid-template-columns: repeat(4,1fr)
+  grid-gap: 30px
+  text-align: left
+  cursor: pointer
+
+.navbar-toggler
+  border: none
+  &:focus
+    outline: none
+    border: none
+.img-2, .i-2
+  visibility: hidden
+.i-2, .i-1
+  position: absolute
+  top: 0
+  right: 0
+.img-1, .img-2
+  position: absolute
+  top: 10px
+  right: 20px
+.nav-link
+  &:hover
+    color: hsl(0, 94%, 66%) !important
+
+.main-container
+  margin: 5%
+  display: grid
+  grid-template-columns: repeat(2,1fr)
+  grid-gap: 5%
+
+.left-container
+  margin: 15% 5%
+
+.login
+  +button(auto, auto,hsl(0, 94%, 66%), white, white, hsl(0, 94%, 66%), hsl(0, 94%, 66%))
+  padding: 10px
+.chrome-button
+  +button(200px,50px, hsl(231, 69%, 60%), white, white, hsl(231, 69%, 60%), hsl(231, 69%, 60%))
+  margin-right: 30px
+.firefox-button
+  +button(200px, 50px, white, black, white, grey, grey)
+  box-shadow: 0 0 5px black
+.text-container
+  +container(10% 31%, center)
+.tabs-container
+  +container(5% 20%, center)
+.nav
+  display: grid
+  grid-template-columns: repeat(3,1fr)
+  grid-gap: 10px
+  a
+    color: grey !important
+
+.active-hr
+  height: 3px
+  background-color: hsl(0, 94%, 66%)
+  border: 0
+  margin-bottom: 0
+
+.horizontal-rule
+  margin: 0
+.content-container
+  margin-bottom: 15%
+
+.button-selector
+  +button(auto, auto, white, black, white, hsl(0, 94%, 66%), white)
+  border: 0
+
+.item-1
+  text-align: center !important
+.item-2
+  hr
+    display: none
+.item-3
+  hr
+    display: none
+#content-1
+  display: grid
+  grid-template-columns: repeat(2,1fr)
+  grid-gap: 20px
+  margin: 0 10%
+#content-2
+  @extend #content-1
+  display: none
+
+#content-3
+  @extend #content-1
+  display: none
+.text-part
+  margin: 10% 9%
+
+.text-button
+    +button(100px, 50px,hsl(231, 69%, 60%), white,  hsl(231, 69%, 60%), white, hsl(231, 69%, 60%))
+    box-shadow: 0 0 5px hsl(231, 69%, 60%)
+
+.p-tag
+  margin: 5%
+  margin-left: 0
+
+.card-container
+  width: 400px
+  text-align: center
+  padding: 40px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  position: relative
+  margin: 0 10%
+  margin-bottom: 20%
+  img
+    margin: 10% 0
+.logo
+  width: 30%
+.card-1
+  padding: 20px
+  -webkit-box-shadow: 0 0 6px #ccc
+  button
+    margin: 5% 0
+    +button(100%, 50px,hsl(231, 69%, 60%), white, white, hsl(231, 69%, 60%), hsl(231, 69%, 60%))
+
+.card-2
+  @extend .card-1
+  position: absolute
+  top: 20%
+  left: 100%
+.card-3
+  @extend .card-1
+  position: absolute
+  top: 40%
+  left: 190%
+
+.questions-part
+  margin: 0 30%
+  p
+    &:hover
+      color: hsl(0, 94%, 66%) !important
+
+.drop-button
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: baseline
+  width: 100%
+  position: relative
+  h6
+    margin: 10px 0
+    &:hover
+      color: hsl(0, 94%, 66%)
+  border: none
+  background-color: white
+  i
+    color: hsl(231, 69%, 60%)
+    margin: 10px 0
+  &:active
+    outline: none
+  &:focus
+    outline: none
+
+.hidden-part
+  margin-top: 5%
+  display: none
+  color: grey !important
+
+.more-info-button
+  @extend .text-part
+  text-align: center
+  margin: 5% 0
+
+.footer-part
+  text-align: center
+  padding: 5%
+  background-color: hsl(231, 69%, 60%)
+  color: white !important
+  input
+    height: 40px
+    width: 300px
+    font-size: 12px
+    border-radius: 10px
+    border: none
+    padding: 0 20px
+    outline: none
+    margin: 2% 2% 0 0
+.input-part
+  position: relative
+  margin: 0 30%
+.error-icon
+  position: absolute
+  top: 26%
+  right: 38%
+  color: hsl(0, 94%, 66%)
+  visibility: hidden
+.correct-icon
+  @extend .error-icon
+  color: #28df99
+
+.error
+  color: hsl(0, 94%, 66%)
+  text-align: left
+  margin-left: 10%
+  visibility: hidden
+
+.footer-content
+  margin: 0 30%
+  p
+    color: white !important
+    margin: 0
+  h2
+    margin: 5%
+
+.icon
+  margin-right: 20px
+  color: white
+  &:hover
+    color: hsl(0, 94%, 66%)
+
+.change-color
+  margin: 0 !important
+  background-color: hsl(229, 31%, 21%) !important
+  padding: 2% 5%
+  a
+    color: white !important

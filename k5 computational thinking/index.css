@@ -1,0 +1,448 @@
+body{
+    font-family: 'Spartan', sans-serif;
+}
+.profile-pic{
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+.dropdown-toggle{
+    width: 40px;
+}
+.bradius{
+    margin-right: 10%;
+    border-radius: 50%;
+}
+.navbar{
+    background-color: #0278ae;    
+}
+.navbar>a{
+    color: white !important;
+}
+.navbar-nav {
+    margin-right: 0;
+    margin-left: auto;
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+
+    cursor: pointer; }
+.navbar-brand{
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-nav{
+    margin-right: 10%;
+}
+.nav-item{
+    margin-right: 10px;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    color: #fa5757 !important;
+}
+.dropdown-menu{
+    width: 0px;
+}
+.profile-box{
+    display: inline;
+}
+.table{
+    width: 50%;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+.kid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    margin: 5%;
+    margin-bottom: 0;
+}
+.parent-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin: 3%;
+    margin-bottom: 0;
+}
+
+.kid-profile{
+    align-self: center;
+}
+.badges-part{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.coins{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.fa-medal{
+    margin-left: 5%;
+    text-align: start !important;
+}
+.gold{
+    color: #ffd57e;
+}
+.silver{
+    color: #bbbfca;
+}
+.fa-coin{
+    color: #ffd57e;
+    text-align: start !important;
+    margin-left: 5%;
+}
+.point{
+    text-align: start !important;
+}
+.name-part{
+    text-align: center;
+    margin: 5% 0;
+}
+.access-buttons{
+    border: 0;
+    border-radius: 10px;
+    padding: 3%;
+    margin-right: 4%;
+    background-color: #FF7F50;
+    color: white;
+}
+.access-buttons:focus{
+    outline: none;
+}
+.access-buttons:hover{
+    transition: 0.3s;
+    transform: translateY(-10px);
+    background-color: white;
+    color:  #FF7F50;
+    border: 3px solid  #FF7F50;
+}
+.access-buttons:active{
+    transform: translateY(4px);
+}
+
+#parent-access-button{
+    text-align: center;
+}
+.buttons-part{
+    align-self: center;
+    text-align: center;
+}
+
+
+.description-part{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.coins{
+    display: flex;
+}
+.bottom-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5%;
+    margin: 3% 5%;
+}
+.parent-bottom-container{
+    margin: 3% 5%;
+}
+
+.reviews{
+    border-style: solid;
+    border-color: #FF7F50;
+    padding: 20px;
+    align-self: center;
+}
+.Tasks{
+    border-style: solid;
+    border-color: #FF7F50;
+    padding: 20px;
+    align-self: center;
+}
+.reviews>p:hover, .Tasks>p:hover{
+    cursor: pointer;
+}
+.reviews>p, .Tasks>p{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+.reviews>p:active, .Tasks>p:active{
+    transform: translateY(4px);
+}
+.fa-hand-point-right{
+    margin-right: 2%;
+}
+.Hello{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.taskrow{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 20px;
+    margin-top: 2%;
+}
+.task{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    color: grey;
+    background-color: aqua;
+    position: relative;
+    padding: 10%;
+}
+.topic-content{
+    margin: 5%;
+    position: relative;
+}
+.fa-chevron-circle-right{
+    position: absolute;
+    z-index: 1000;
+    top: 60%;
+    right: -2%;
+    cursor: pointer;
+}
+.fa-chevron-circle-right:active, .fa-chevron-circle-left:active, .fa-plus-circle:active{
+    transform: translateY(4px);
+}
+.fa-chevron-circle-left{
+    position: absolute;
+    z-index: 1000;
+    top: 60%;
+    left: -5%;
+    cursor: pointer;
+}
+.fa-plus-circle{
+    position: absolute;
+    z-index: 1000;
+    color: #FF7F50;
+    bottom: 2%;
+    right: 2%;
+    cursor: pointer;
+}
+.connect-button{
+    border: 0;
+    width: 100px;
+    border-radius: 10px;
+    padding: 3%;
+    margin-right: 4%;
+    background-color: #FF7F50;
+    color: white;
+}
+.connect-button:hover{
+    transition: 0.3s;
+    transform: translateY(-4px);
+    background-color: white;
+    color:  #FF7F50;
+    border: 3px solid  #FF7F50;
+}
+.connect-button:active{
+    transform: translateY(4px);
+}
+.connect-button:focus{
+    outline: none;
+}
+th, tr, td{
+    text-align: center;
+}
+.consult{
+    width: 50%;
+    margin: 0 auto; 
+}
+.badge{
+    width: 60px;
+    padding: 8px;
+}
+.course-container{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.video{
+    margin: 5% auto 2%;
+    width: 1000px;
+    height: 500px;
+    background-color: #1c2b2d;
+    position: relative;
+    border-radius: 10px;
+}
+.fa-youtube{
+    color: red;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+}
+.notes{
+
+    background-color: #bedbbb;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.fa-plus-square{
+    color:  #FF7F50;
+    margin-left: 2%;
+    cursor: pointer;
+}
+.fa-plus-square:active{
+    transform: translateY(2px);
+}
+.students-part{
+    text-align: center;
+    width: 400px;
+    border: 4px solid #FF7F50;
+    margin: 10%;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+.teacher-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    margin-bottom: 0;
+}
+.teacher-access-buttons{
+    width: 200px;
+    border: 0;
+    background-color: #FF7F50;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+.teacher-access-buttons:focus{
+    outline: none;
+}
+.teacher-access-buttons:active{
+    transform: translateY(4px);
+}
+.teacher-access-buttons:hover{
+    background-color: white;
+    color: #FF7F50;
+    border: 2px solid  #FF7F50;
+}
+.tools>p:active{
+    transform: translateY(4px);
+    cursor: pointer;
+}
+.tools>p:hover{
+    cursor: pointer;
+}
+.tools>p{
+    margin: 5%;
+}
+.tools{
+    text-align: center;
+    background-color: #bedbbb;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 50% 0;
+}
+.tool-box{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 30px;
+    margin: 10% 5%;
+    padding: 20px;
+    text-align: center;
+}
+.Dashboard{
+    border: 2px solid  #FF7F50;
+    padding: 20px;
+    border-radius: 10px;
+}
+.reply-box{
+    border-radius: 10px;
+    margin-bottom: 5%;
+    background-color: #bedbbb;
+    padding: 10px;
+    text-align: center;
+}
+.reported-area{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffd57e;
+}
+.leads{
+    margin-left: 0%;
+    width: 60vw;
+}
+.leaderboard-container{
+    display: grid;
+    grid-template-columns: 1.75fr 1fr;
+}
+.weekly-updates{
+    border: 2px solid  #FF7F50;
+    padding: 20px;
+    margin-right: 5%;
+    margin-top: 9%;
+    text-align: center;
+}
+.weekly-slides{
+    position: relative;
+}
+.weekly-slides>.fa-chevron-circle-left{
+    top: 15%;
+    left: 5%;
+}
+.weekly-slides>.fa-chevron-circle-right{
+    top: 17%;
+    right: 3%;
+}
+.note-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0 15%;
+}
+.note-num{
+    text-align: center;
+}
+.note-num:hover{
+    cursor: pointer;
+}
+.note-num:active{
+    transform: translateY(4px);
+}
+.students-part>p{
+    cursor: pointer;
+}
+.students-part>p:hover{
+    background-color: #FF7F50;
+    color: white;
+    border-radius: 10px;
+}
+.add-task{
+    border-radius: 10px;
+    border: 2px solid #FF7F50;
+    width: 800px;
+    height: 600px;
+    margin: 8% auto;
+    display: flex;
+}
+.task-button{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FF7F50;
+    color: white;
+    width: 300px;
+    height: 70px;
+    text-align: center;
+}
+.taskstoadd>p{
+    position: relative;
+}

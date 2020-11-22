@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Alacrity</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <img src="My-Logo.png" width="30" height="30" class="d-inline-block align-top bradius" alt="application-logo" loading="lazy">
+            Alacrity
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Connections</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Leaderboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img width="30" src="pro-pic.jpeg" height="30" alt="profile-pic" class="profile-pic">
+                Me
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="kid-profile.html">Profile</a>
+                <a class="dropdown-item" href="#">Settings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Signout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="kid-container">
+      <div class="kid-profile">
+        <div class="name-part">
+          <img width="200" src="pro-pic.jpeg" height="200" class="profile-pic" alt="profile-pic">
+          <h5>Herky Hornet</h5>
+          <p>DOB: 06/02/2012</p>
+        </div>
+        <div class="description-part">
+          <p><h6>Description:</h6> I love Challenging myself and solving new problems</p>
+          <p><h6>Interests:</h6> games, eat, sleep</p>
+          <p><h6>Level:</h6> 2</p>
+        </div>
+      </div>
+      <div class="badges-part">
+        <table class="table table-borderless mr-auto">
+          <tbody>
+            <tr class="d-flex">
+              <td><strong>Badges</strong></td>
+              <td class="coins"><i class="fas fa-medal fa-2x gold"></i></td>
+            </tr>
+            <tr class="d-flex">
+              <td><strong>Points</strong></td>
+              <td class="coins">15000<i class="fas fa-coin"></i></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="activity mr-auto ml-auto">
+          <img width="600" height="450" src="Activity-monitor.png" alt="Activity-monitor">
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div class="bottom-container">
+      <div class="buttons-part">
+        <button type="button" class="access-buttons" onclick="window.location.href='course.html'">
+          Course Work
+        </button>
+        <button type="button" class="access-buttons" onclick="window.location.href='explore-tasks.html'">
+          Explore Tasks
+        </button>
+        <button type="button" class="access-buttons" onclick="window.location.href='create-task.html'">
+          Create project
+        </button>
+      </div>
+      <div class="reviews">
+        <h3>Reviews</h3>
+        <p><a data-toggle="modal" data-target="#exampleModal"><i class="far fa-hand-point-right"></i><strong>Gary:</strong> Nice work on solving sorting bucket challenge</a><span class="badge badge-pill badge-primary">New</span></p>
+        <p><a data-toggle="modal" data-target="#exampleModal"><i class="far fa-hand-point-right"></i><strong>Mary:</strong> You are doing great and Look at your points!!!!!</a><span class="badge badge-pill badge-primary">New</span></p>
+        <p><a data-toggle="modal" data-target="#exampleModal"><i class="far fa-hand-point-right"></i><strong>Fred:</strong> Nice work on solving sorting bucket challenge</a></p>
+        <p><a data-toggle="modal" data-target="#exampleModal"><i class="far fa-hand-point-right"></i><strong>coop:</strong> Nice work on solving sorting bucket challenge</a></p>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Review</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="reply-box">
+                <strong>Gary:</strong> Nice work on solving sorting bucket challenge
+              </div>
+              <textarea name="message" id="" cols="50" rows="10"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Reply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
